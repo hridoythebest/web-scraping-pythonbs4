@@ -11,7 +11,7 @@ while True:
     soup = BeautifulSoup(r.text, "lxml")
     np = soup.find("a", {"aria-label": "next"}).get("href")
     cnp="https://www.airbnb.com"+np
-    print(cnp)
+    # print(cnp)
 
     url = cnp
     r = requests.get(url)
